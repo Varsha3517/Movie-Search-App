@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+
+    <!-- <div class="max-w-sm mx-auto mt-12 text-center">
+        <h1 id="bill" class="text-3xl font-bold">🍿⛱️</h1>
+        <h1 id="heading" class="text-xl font-bold  ">Split the bill among your friends! </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit hic inventore adipisci.</p>
+        <div class="flex gap-3 ">
+            <input id="amountInput" type="text" placeholder="Enter Amount"
+            class="py-3 border border-neutral-300 px-3 rounded-xl focus:ring-2 focus:ring-neutral-200 focus:outline-none mt-3 focus:border-neutral-600 w-full">
+            <input id="personsInput" type="text" placeholder="Enter Persons"
+            class="py-3 border border-neutral-300 px-3 rounded-xl focus:ring-2 focus:ring-neutral-200 focus:outline-none mt-3 focus:border-neutral-600 w-full">
+        </div>
+        <button onclick="splitBill()" class="bg-black w-full px-8 py-3 rounded-xl text-white mt-3">Split the Bill</button>
+    </div> -->
+
+    <h1
+        class="text-3xl text-center border bg-violet-50 rounded-3xl border-violet-300 text-violet-900 p-5 mt-5 mx-20 font-bold">
+        🎬 Movie Search App 🎬</h1>
+
+    <div class="text-center text-violet-700 my-5 mx-100 flex gap-3 justify-between">
+        <input id="movieInput" type="text" placeholder="Please enter a movie name"
+            class="text-lg py-2 px-3 border border-neutral-300 rounded-xl focus:ring-2 focus:ring-neutral-200 focus:outline-none mt-3 focus:border-neutral-600 w-3/4">
+        <button onclick="searchMovie()" class="text-sm bg-violet-900 px-8 py-2 rounded-xl text-white mt-3 w-1/4">Search
+            Movie</button>
+    </div>
+
+    <div id="details" class="mb-12 mx-100 border rounded-3xl border-violet-300 p-5 hidden">
+        <div>
+            <img src="" alt="" id="poster" class="rounded-3xl mx-auto">
+            <div class="flex mt-5">
+                <h1 class="text-xl font-bold " id="title"></h1>
+                <span>&nbsp;</span>
+                <h1 class="text-lg" id="year"></h1>
+            </div>
+            <h3 class="mt-2" id="imdb"></h3>
+            <h3 class="mt-2" id="released"></h3>
+            <p class="mt-2" id="desc"></p>
+        </div>
+    </div>
+
+    <div id="error" class="mb-12 mx-100 border rounded-3xl border-violet-300 p-5 hidden">
+        <h1>❌ Movie not found. Try again!</h1>
+    </div>
+
+    <div id="recent" class="mb-12 mx-100 border rounded-3xl border-violet-300 p-5 hidden">
+        <h1 class="text-xl font-bold">Recently Searched: </h1>
+        <div class="text-gray-700 mt-3 flex gap-3 justify-between">
+            <h3 class="mt-3 w-3/4" id="recent-list"></h3>
+            <button onclick="removeLatest()"
+                class="text-xs bg-violet-900 px-8 py-2 rounded-xl text-white mt-3 w-1/4">Remove Last Searched
+                Movie</button>
+        </div>
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
